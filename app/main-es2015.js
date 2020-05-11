@@ -355,7 +355,7 @@ class ChatComponent {
         }).subscribe((res) => this.allMessages = res.message, err => console.error(err));
     }
     getDateValue(value) {
-        var dateValue = new Date(value);
+        var dateValue = new Date(parseInt(value));
         return `${dateValue.toLocaleDateString('es-GT')} ${dateValue.toLocaleTimeString('es-GT')}`;
     }
     postNewMessage() {

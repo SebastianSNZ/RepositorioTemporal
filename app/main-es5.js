@@ -689,7 +689,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getDateValue",
         value: function getDateValue(value) {
-          var dateValue = new Date(value);
+          var dateValue = new Date(parseInt(value));
           return "".concat(dateValue.toLocaleDateString('es-GT'), " ").concat(dateValue.toLocaleTimeString('es-GT'));
         }
       }, {
